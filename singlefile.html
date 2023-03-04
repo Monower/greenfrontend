@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenHub</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <nav class="bg-sky-400 py-1">
+        <div class="container mx-auto flex justify-between items-center">
+            <div>
+                <input class="rounded-full px-2 focus:outline-none text-slate-900" placeholder="search..." type="search" name="" id="">
+            </div>
+            <div class="flex space-x-4 text-slate-50 items-center text-[20px]">
+                <a href="signup.html">Signup</a>
+                <a href="index.html">Login</a>
+                <a href="dashboard.html">Dashboard</a>
+                <a href="repository.html">Repository</a>
+                <a href="singlefile.html">Single File</a>
+                <a href="bookmarks.html">Bookmarks</a>
+                <img class="w-[35px] h-[35px] rounded-full" src="/images/demo_user.webp" alt="">
+            </div>
+        </div>
+    </nav>
+
+
+
+
+    <!-- navbar start -->
+<!--     <section class="px-10 bg-[#1c92da] w-auto h-12 flex items-center justify-between">
+        <div>
+            <input placeholder="search..." class="bg-slate-300 rounded-xl p-1" type="search" name="" id="">
+        </div>
+        <div class="flex text-slate-50 gap-3">
+            <a href="">Bookmarks</a>
+            <a href="">Messages</a>
+            <img src="images/flower-729512__340.jpg" class="w-9 h-9 rounded-full" alt="">
+        </div>
+    </section> -->
+    <!-- navbar end -->
+
+    <!-- body start -->
+    <div class="container mx-auto grid grid-cols-3 gap-12 pt-5 pb-[70px]">
+        <div class="col-span-2 flex flex-col gap-3">
+            <div class="bg-sky-400 flex justify-between items-center px-2 py-1 rounded-md">
+                <h3 class="text-[24px] font-bold text-slate-50">Repository/hello.php</h3>
+                <div class="flex space-x-5">
+                    <span><i class="fa-solid fa-download"></i></span>
+                    <span><i class="fa-solid fa-trash-can"></i></span>
+                </div>
+            </div>
+            <div class="bg-slate-300 p-3 rounded-md">
+                <p>echo 'hello world.';</p>
+            </div>
+        </div>
+        <div class="flex flex-col justify-start">
+            <h3 class="text-[24px] text-slate-900 font-bold">Comments:</h3>
+            <form action="#" method="post">
+                <div class="flex flex-col gap-2">
+                    <textarea class="border border-slate-400 rounded-md px-2 focus:outline-none" placeholder="Add comment..." name="" id="" cols="30" rows="1"></textarea>
+                    <button class="bg-sky-400 w-[22%] py-1 rounded-md text-slate-50 font-bold" type="submit">Comment</button>
+                </div>
+
+            </form>
+
+
+
+            <div class="pt-5 flex items-center space-x-2">
+                <img src="images/flower-729512__340.jpg" class="w-[35px] h-[35px] rounded-full" alt="">
+                <div>
+                    <h3 class="text-[18px] font-semibold">Demo name</h3>
+                    <p>demo comment</p>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <!-- body end -->
+</body>
+</html>
